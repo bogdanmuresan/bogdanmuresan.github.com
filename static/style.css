@@ -37,9 +37,54 @@ body {
 
 header {
   padding: 4.5rem 1.5rem 3rem;
-  text-align: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.header-left {
+  flex: 0 1 900px;
+  text-align: center;
+}
+
+.header-right {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+}
+
+.email-contact {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.email-contact:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-right {
+    order: -1;
+  }
 }
 
 header h1 {
