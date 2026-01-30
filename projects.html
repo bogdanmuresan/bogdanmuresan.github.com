@@ -23,7 +23,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="static/style.css?v=20260130c">
+  <link rel="stylesheet" href="static/style.css?v=20260130d">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDT719NMXJ"></script>
@@ -509,6 +509,14 @@
     <p>© 2026 Bogdan Leon Mureșan · DevOps & Platform Engineering · <a href="index.html" style="color: var(--accent); text-decoration: none;">Home</a></p>
   </footer>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent" class="cookie-consent" style="display: none;">
+    <div class="cookie-consent-content">
+      <p>This site uses cookies from Google Analytics to analyze traffic. By continuing to use this site, you consent to the use of cookies. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Learn more</a></p>
+      <button id="cookie-accept" class="cookie-accept-btn">Accept</button>
+    </div>
+  </div>
+
   <!-- Back to Top Button -->
   <button id="back-to-top" class="back-to-top" aria-label="Back to top">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -530,6 +538,23 @@
 
     backToTopButton.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Cookie consent functionality
+    const cookieConsent = document.getElementById('cookie-consent');
+    const cookieAcceptBtn = document.getElementById('cookie-accept');
+    
+    // Check if user has already consented
+    if (!localStorage.getItem('cookieConsent')) {
+      // Show banner after a short delay
+      setTimeout(() => {
+        cookieConsent.style.display = 'block';
+      }, 1000);
+    }
+    
+    cookieAcceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'true');
+      cookieConsent.style.display = 'none';
     });
   </script>
 
