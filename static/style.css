@@ -6,6 +6,11 @@
   --accent: #ffe159;
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -14,6 +19,14 @@ body {
   background: radial-gradient(1200px 600px at 20% -10%, rgba(255,225,89,0.08), transparent), var(--bg);
   color: var(--text);
   line-height: 1.6;
+  opacity: 0;
+  animation: pageLoad 0.5s ease-out forwards;
+}
+
+@keyframes pageLoad {
+  to {
+    opacity: 1;
+  }
 }
 
 /* subtle motion */
@@ -265,59 +278,256 @@ li {
   border: 1px solid rgba(255, 225, 89, 0.2);
 }
 
-/* Technology Cloud */
-.tech-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.project-read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.cloud-tag {
-  background: rgba(255, 225, 89, 0.08);
-  color: var(--text);
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 500;
-  border: 1px solid rgba(255, 225, 89, 0.15);
+.project-read-more:hover {
+  transform: translateX(4px);
+  color: #fff;
+}
+
+/* Technology Cloud - SVG Banner */
+.tech-banner {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.4) 0%, transparent 100%);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.tech-cloud-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.tech-cloud-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 250px;
+}
+
+.cloud-text {
   transition: all 0.3s ease;
   cursor: default;
-  white-space: nowrap;
 }
 
-.cloud-tag:hover {
-  background: rgba(255, 225, 89, 0.15);
-  border-color: rgba(255, 225, 89, 0.3);
-  transform: translateY(-2px);
+.cloud-text:hover {
+  fill: var(--accent) !important;
+  filter: drop-shadow(0 0 8px rgba(255, 225, 89, 0.6));
 }
 
-.cloud-tag.size-xl {
-  font-size: 1.5rem;
-  padding: 0.8rem 1.5rem;
-  font-weight: 600;
+@media (max-width: 768px) {
+  .tech-banner {
+    padding: 0.5rem 0;
+  }
+
+  .tech-cloud-wrapper {
+    padding: 0 1rem;
+  }
+
+  .tech-cloud-svg {
+    max-height: 150px;
+  }
+}
+
+/* Section Anchors */
+.section-anchor {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  font-size: 0.8em;
+}
+
+h2:hover .section-anchor,
+h3:hover .section-anchor,
+.section-anchor:focus {
+  opacity: 1;
+}
+
+.section-anchor:hover {
   color: var(--accent);
 }
 
-.cloud-tag.size-lg {
-  font-size: 1.2rem;
-  padding: 0.7rem 1.3rem;
+/* Career Timeline */
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent), rgba(255, 225, 89, 0.2));
+  top: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 4px rgba(255, 225, 89, 0.2);
+}
+
+.timeline-dot-start {
+  background: var(--muted);
+  box-shadow: 0 0 0 4px rgba(156, 163, 175, 0.2);
+}
+
+.timeline-content {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 225, 89, 0.1);
+  width: calc(50% - 2rem);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-content:hover {
+  border-color: rgba(255, 225, 89, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-date {
+  color: var(--accent);
   font-weight: 600;
-  color: rgba(255, 225, 89, 0.95);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
-.cloud-tag.size-md {
-  font-size: 1rem;
-  padding: 0.6rem 1.2rem;
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+  font-size: 1.2rem;
 }
 
-.cloud-tag.size-sm {
-  font-size: 0.85rem;
-  padding: 0.5rem 1rem;
-  opacity: 0.9;
+.timeline-company {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.timeline-description {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timeline-tag {
+  background: rgba(255, 225, 89, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 225, 89, 0.2);
+}
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(255, 225, 89, 0.3);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 225, 89, 0.4);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
 }
 
 /* Floating Social Links */
@@ -360,6 +570,13 @@ li {
 @media (max-width: 768px) {
   .floating-socials {
     display: none;
+  }
+
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
   }
 }
 
