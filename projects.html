@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Bogdan Leon Mureșan</title>
+  <meta name="description" content="Notable projects and technical work by Bogdan Leon Mureșan - DevOps & Platform Engineering across various industries." />
+  <meta name="keywords" content="DevOps Projects, Platform Engineering, Kubernetes, AWS, IBM Cloud, CI/CD, Docker, Infrastructure" />
+  <meta name="author" content="Bogdan Leon Mureșan" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bogdanmuresan.github.io/projects.html" />
+  <meta property="og:title" content="Projects | Bogdan Leon Mureșan" />
+  <meta property="og:description" content="Notable projects and technical work by Bogdan Leon Mureșan - DevOps & Platform Engineering across various industries." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bogdanmuresan.github.io/projects.html" />
+  <meta property="twitter:title" content="Projects | Bogdan Leon Mureșan" />
+  <meta property="twitter:description" content="Notable projects and technical work by Bogdan Leon Mureșan - DevOps & Platform Engineering across various industries." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDT719NMXJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LDT719NMXJ');
+  </script>
+</head>
+<body>
+
+  <header class="fade-in">
+    <div class="header-content">
+      <div class="header-left">
+        <h1>Notable Projects</h1>
+        <h2>DevOps & Platform Engineering Work (2014-2023)</h2>
+        <p>
+          A selection of significant projects spanning cloud infrastructure, Kubernetes platforms,
+          CI/CD automation, and DevSecOps implementations across healthcare, finance, e-commerce,
+          and enterprise sectors.
+        </p>
+        <a class="cta" href="index.html">Back to Home</a>
+      </div>
+      <div class="header-right">
+        <a href="mailto:hello@bogdanmuresan.ro" class="email-contact" aria-label="Send email to Bogdan">hello@bogdanmuresan.ro</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2 class="section-title fade-in">Projects Portfolio</h2>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <h3>Global Enterprise Platform</h3>
+        <p class="project-meta">IBM • 11/2023 – present</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Infrastructure automation and observability for a global enterprise platform.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Participated in Puppet to Ansible migration, implementing config-as-code practices</li>
+          <li>Maintain and enhance Ansible Automation Platform</li>
+          <li>Offer support to development teams for Ansible adoption and best practices</li>
+          <li>Design and implement complex Ansible workflows for VM provisioning, security hardening, configuration management, and patching automation</li>
+          <li>Build monitoring solutions using Grafana Cloud and Prometheus for on-premise and Kubernetes environments as part of the observability team</li>
+          <li>Develop Jenkins Job DSL and CI/CD pipelines</li>
+          <li>Create and maintain Ansible playbooks, roles and collections</li>
+          <li>Custom Python automation development</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>Ansible, Ansible Automation Platform</li>
+          <li>Jenkins, Jenkins Job DSL</li>
+          <li>Grafana Cloud, Prometheus, Dynatrace</li>
+          <li>Kubernetes</li>
+          <li>Azure</li>
+          <li>Red Hat ecosystem (RHEL)</li>
+        </ul>
+      </div>
+
+      <div class="project-card fade-in delay-1">
+        <h3>Health Platform</h3>
+        <p class="project-meta">IBM • 01/2020 – 11/2023</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Platform for providing health-related services, containing multiple products with hundreds of microservices,
+          tens of environments, and multiple programming languages.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Provide support for the DevOps toolchains</li>
+          <li>Assist developers with dockerfiles and Kubernetes manifests</li>
+          <li>Create, optimize and enhance CI/CD pipelines</li>
+          <li>Work closely with operations and security teams</li>
+          <li>Troubleshoot issues in all environments, including production</li>
+          <li>Design and implement a process for creating and deploying a PXE boot secure bootable OS image</li>
+          <li>Maintain DevOps tools, clusters and resources</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>IBM Cloud, IBM Kubernetes Service, IBM Container Registry, Cloud Functions, IAM</li>
+          <li>Jenkins declarative pipelines created using Groovy language, shared library and unit tests</li>
+          <li>Ansible and Ansible Tower for deployment pipelines</li>
+          <li>Docker, docker-compose, Helm and Podman for containerization</li>
+          <li>LogDNA, Sysdig for monitoring and alerts</li>
+          <li>Kubernetes and OpenShift for container orchestration</li>
+          <li>ArgoCD and GitOps for deployments</li>
+          <li>Sonatype Nexus as artifact repository</li>
+          <li>SonarQube as static analysis tool</li>
+          <li>Dependency Track and Dependabot for dependency security</li>
+          <li>Hashicorp Vault, Sealed secrets and IBM specific tools for secret management</li>
+          <li>AppArmor, AIDE, Intel SGX, Gramine, AuditD and other tools for security</li>
+          <li>GitHub Actions</li>
+          <li>Programming languages specific DSLs and tools: Gradle, Maven, Conan, npm, Python, Fastlane, Bash</li>
+        </ul>
+      </div>
+
+      <div class="project-card fade-in delay-1">
+        <h3>Cryptocurrency Fund Platform</h3>
+        <p class="project-meta">Freshbyte • 03/2018 – 12/2019 • DevOps Engineer/Architect</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Cryptocurrency fund platform for a broker agency.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Create the infrastructure in AWS</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>HA infrastructure was created with Docker in AWS using VPC, ECS, ECR, EFS, ALB and RDS</li>
+          <li>Infrastructure automation was done with CloudFormation and Ansible</li>
+          <li>Autoscaling was implemented based on requests and server loads</li>
+          <li>Zero-downtime deployments were accomplished using CodePipeline for software written in PHP, Node.js, React</li>
+          <li>Custom monitoring was done using CloudWatch</li>
+          <li>Additional security by using AWS Cognito, WAF, Secrets, CloudTrail alerts and Guard Duty</li>
+          <li>On-demand test environments were provisioned with all components</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Agile</p>
+      </div>
+
+      <div class="project-card fade-in delay-2">
+        <h3>Motor Test Platform</h3>
+        <p class="project-meta">Freshbyte • 03/2018 – 12/2019 • CI/CD Pipeline Engineer</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Replaced old monolith desktop motor testing software with microservice containerized web apps.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Create the CI/CD pipelines and dockerfiles</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>Jenkins declarative pipelines created using Groovy language and maintained/automated by Ansible</li>
+          <li>Dockerfiles and pipelines created for software written in C#, Java and React</li>
+          <li>Create dev environment using docker-compose</li>
+          <li>Test environments created in Azure</li>
+          <li>Zookeeper, Kafka, Keycloak</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Agile</p>
+      </div>
+
+      <div class="project-card fade-in delay-3">
+        <h3>Wine E-commerce Platform</h3>
+        <p class="project-meta">Freshbyte • 02/2018 – 02/2019 • DevOps Engineer/Architect</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Platforms and apps for selling wines.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Create the infrastructure in AWS</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>HA infrastructure was created in AWS using VPC, EC2, EFS, ALB and RDS</li>
+          <li>Infrastructure automation was done with CloudFormation</li>
+          <li>Autoscaling was implemented based on requests and server loads</li>
+          <li>Zero-downtime deployments were accomplished using CodeBuild and CodeDeploy</li>
+          <li>Monitoring was done using CloudWatch</li>
+          <li>Performance improvements by adding Elasticache and Cloudflare</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Waterfall</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3>Forex Trading Platform</h3>
+        <p class="project-meta">Freshbyte • 01/2016 – 02/2018 • DevOps Engineer</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Trading apps in the financial industry.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Maintain existing infrastructure</li>
+          <li>Create new microservice infrastructure</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>Existing infrastructure was deployed on VMWare ESXi servers and VMs were managed using VMWare vSphere</li>
+          <li>Configure network switches and SonicWall firewalls, configure site-to-site VPN between multiple datacenters</li>
+          <li>Manage the Windows servers and services: AD, DNS in high availability</li>
+          <li>Manage the bare metal Dell servers using iDrac and ensure physical tape backups are done properly</li>
+          <li>Improve deployment process by adding Jenkins and Ansible to deploy services written in C++, Golang, Ruby, Node.js, PHP</li>
+          <li>Centralized logging using ELK and monitoring done with collectd, InfluxDB and Grafana as well as Shinken, Monit and New Relic</li>
+          <li>Work on the new infrastructure by dockerizing all microservices, creating CI/CD pipelines using Jenkins Groovy pipeline and creating a Kubernetes cluster on bare metal</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Waterfall</p>
+      </div>
+
+      <div class="project-card fade-in delay-1">
+        <h3>Airline Loyalty Platform</h3>
+        <p class="project-meta">Freshbyte • 03/2015 – 01/2016 • DevOps Engineer</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Loyalty solutions for some of the biggest airlines.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Create new dockerized infrastructure and CI/CD pipelines</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>Using Ansible, Docker and docker-compose to create and manage dev and test environments</li>
+          <li>TeamCity was used for the CI/CD pipelines</li>
+          <li>Centralized logging using ELK (Elasticsearch, Logstash and Kibana). Logstash was eventually replaced with Filebeat</li>
+          <li>Integration with New Relic for application and infrastructure monitoring</li>
+          <li>Performance improvements by configuring Varnish and Redis</li>
+          <li>Security/vulnerability scanning using Nessus</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Agile</p>
+      </div>
+
+      <div class="project-card fade-in delay-2">
+        <h3>Music Industry Crowdfunding</h3>
+        <p class="project-meta">Freshbyte • 09/2014 – 03/2015 • DevOps Engineer</p>
+
+        <h4 class="project-section-title">Project Description</h4>
+        <p class="project-description">
+          Fund-raising web-app in the music industry.
+        </p>
+
+        <h4 class="project-section-title">Responsibilities</h4>
+        <ul class="project-list">
+          <li>Maintain infrastructure</li>
+          <li>Create new infrastructure to handle large amount of traffic</li>
+        </ul>
+
+        <h4 class="project-section-title">Technologies Used</h4>
+        <ul class="project-list">
+          <li>Created a cloud-hybrid (Digital Ocean droplets and Hetzner bare metal combination) deployment environment using Cloudflare, Pacemaker and Corosync to handle high availability and scaling</li>
+          <li>Performance testing using JMeter Apache Benchmark</li>
+          <li>Performance improvements by configuring HAProxy and Varnish servers as proxy</li>
+          <li>Infrastructure automation was done using Ansible</li>
+        </ul>
+
+        <p class="project-methodology"><strong>Methodology:</strong> Waterfall</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title fade-in">Professional Experience</h2>
+
+    <div class="experience-card fade-in">
+      <h3>Senior DevSecOps Engineer</h3>
+      <p class="project-meta">IBM & Freshbyte, Cluj-Napoca (Romania) • 06/2014 – present</p>
+
+      <p class="project-description">
+        Working on large-scale enterprise platforms, leading DevOps and DevSecOps initiatives. Focus on cloud-native
+        infrastructure, Kubernetes ecosystems, CI/CD automation, security hardening, and observability for mission-critical
+        systems supporting hundreds of microservices across multiple environments.
+      </p>
+    </div>
+
+    <div class="experience-card fade-in delay-2">
+      <h3>PHP Technical Lead</h3>
+      <p class="project-meta">Freshbyte, Cluj-Napoca (Romania) • 04/2011 – 06/2014</p>
+
+      <p class="project-description">
+        Leading the offshore development team working mainly on loyalty platforms built on top of Magento e-commerce
+        for some of the largest airline companies in the world.
+      </p>
+
+      <p class="project-description">
+        My responsibilities included creating technical specifications, ensuring development is done as per coding standards &
+        guidelines, assigning work to the team, leading the scrum meetings and providing support for developers, testers and
+        business analysts. I was also involved in the internship program, doing the interviews and mentoring the interns.
+      </p>
+
+      <p class="project-description">
+        Apart from the development role, I was also part of the team creating the continuous integration/deployment process,
+        working closely with sysadmins in creating the environments, deployment process and performance tuning. I was also
+        working closely with the QA team, helping to create the automated testing solutions that ensured that bug free systems
+        were being delivered.
+      </p>
+    </div>
+
+    <div class="experience-card fade-in delay-3">
+      <h3>Senior Web Developer</h3>
+      <p class="project-meta">Freshbyte, Cluj-Napoca (Romania) • 03/2008 – 04/2011</p>
+
+      <p class="project-description">
+        Working as part of the development team for some of the clients and part of the technical team for most of the projects
+        built on the LAMP stack, I was also taking part in peer-reviewing code and providing technical guidance for the junior
+        members in our team. I also had responsibilities in server administration and managing the requirements and specifications
+        from some of the clients.
+      </p>
+    </div>
+
+    <div class="experience-card fade-in">
+      <h3>Web Developer</h3>
+      <p class="project-meta">Freshbyte, Cluj-Napoca (Romania) • 03/2004 – 03/2008</p>
+
+      <p class="project-description">
+        Working mainly on waterfall projects ranging between simple client presentation websites, up to complex web applications
+        written from scratch.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title fade-in">Education</h2>
+    <div class="card fade-in">
+      <h3>Bachelor's Degree in Electrical Engineering</h3>
+      <p class="project-meta">Technical University of Cluj-Napoca (Romania) • 2009</p>
+      <p>Electric Drives and Robotics</p>
+    </div>
+    <div class="card fade-in delay-1" style="margin-top: 1.5rem;">
+      <h3>High School Diploma</h3>
+      <p class="project-meta">Avram Iancu High School, Cluj-Napoca (Romania) • 2004</p>
+      <p>Mathematics and Computer Science</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="mailto:hello@bogdanmuresan.ro" aria-label="Send email to Bogdan">Email</a>
+      <a href="http://github.com/bogdanmuresan" target="_blank" rel="noopener noreferrer" aria-label="Visit Bogdan's GitHub profile">GitHub</a>
+      <a href="http://ro.linkedin.com/in/bogdanmuresan" target="_blank" rel="noopener noreferrer" aria-label="Visit Bogdan's LinkedIn profile">LinkedIn</a>
+      <a href="http://facebook.com/muresanbogdan" target="_blank" rel="noopener noreferrer" aria-label="Visit Bogdan's Facebook profile">Facebook</a>
+      <a href="https://www.instagram.com/b0gdanmuresan/" target="_blank" rel="noopener noreferrer" aria-label="Visit Bogdan's Instagram profile">Instagram</a>
+    </div>
+    <p>© 2026 Bogdan Leon Mureșan · DevOps & Platform Engineering · <a href="index.html" style="color: var(--accent); text-decoration: none;">Home</a></p>
+  </footer>
+
+</body>
+</html>

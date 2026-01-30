@@ -163,6 +163,108 @@ li {
   color: var(--accent);
 }
 
+/* Projects Section */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+}
+
+/* Experience Section */
+.experience-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent), var(--card);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  margin-bottom: 2rem;
+}
+
+.experience-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.projects-grid {
+  display: block;
+}
+
+.project-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent), var(--card);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  margin-bottom: 2rem;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.project-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.project-section-title {
+  color: var(--text);
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.project-card h3 + .project-meta + .project-section-title {
+  margin-top: 1rem;
+}
+
+.project-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.project-list li {
+  margin-bottom: 0.6rem;
+}
+
+.project-methodology {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 225, 89, 0.15);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-description {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(255, 225, 89, 0.1);
+  color: var(--accent);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 225, 89, 0.2);
+}
+
 footer {
   text-align: center;
   padding: 2.5rem 1.5rem;
