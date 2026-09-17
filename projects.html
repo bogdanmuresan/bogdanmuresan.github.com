@@ -80,28 +80,38 @@
 
         <h4 class="project-section-title">Project Description</h4>
         <p class="project-description">
-          Infrastructure automation and observability for a global enterprise platform.
+          Infrastructure automation, Configuration-as-Code and observability for a global enterprise platform,
+          managing Red Hat Ansible Automation Platform across multiple organizations, environments and hundreds
+          of automation workflows with high-availability and multi-site disaster recovery.
         </p>
 
         <h4 class="project-section-title">Responsibilities</h4>
         <ul class="project-list">
           <li>Participated in Puppet to Ansible migration, implementing config-as-code practices</li>
-          <li>Maintain and enhance Ansible Automation Platform</li>
+          <li>Maintain and enhance Ansible Automation Platform (Controller, Gateway, Hub, EDA)</li>
+          <li>Manage the platform entirely as Configuration-as-Code (CasC), driving organizations, teams, users, RBAC roles, credentials, inventories and job templates through Git and object-diff reconciliation</li>
+          <li>Design and operate high-availability and multi-site failover for AAP using HAProxy Enterprise, with automated active/passive disaster-recovery playbooks</li>
+          <li>Lead AAP platform version upgrades and migrations (2.5 → 2.6 → 2.7) and the migration of the platform to Microsoft Azure</li>
           <li>Offer support to development teams for Ansible adoption and best practices</li>
           <li>Design and implement complex Ansible workflows for VM provisioning, security hardening, configuration management, and patching automation</li>
           <li>Build monitoring solutions using Grafana Cloud and Prometheus for on-premise and Kubernetes environments as part of the observability team</li>
-          <li>Develop Jenkins Job DSL and CI/CD pipelines</li>
-          <li>Create and maintain Ansible playbooks, roles and collections</li>
+          <li>Developed extensive Jenkins Job DSL and Groovy pipeline automation, later migrating CI/CD to GitHub Actions with per-environment scoped service accounts restricted to specific job templates</li>
+          <li>Implement policy-as-code guardrails with Open Policy Agent (OPA/Rego)</li>
+          <li>Build and maintain custom Ansible Execution Environments, playbooks, roles and collections</li>
+          <li>Integrate enterprise authentication (LDAP) and secrets management via Azure Key Vault and Ansible Vault</li>
           <li>Custom Python automation development</li>
         </ul>
 
         <h4 class="project-section-title">Technologies Used</h4>
         <ul class="project-list">
-          <li>Ansible, Ansible Automation Platform</li>
-          <li>Jenkins, Jenkins Job DSL</li>
+          <li>Ansible, Ansible Automation Platform (Controller, Gateway, Hub, EDA), Execution Environments</li>
+          <li>Configuration-as-Code, GitOps, object-diff reconciliation</li>
+          <li>HAProxy Enterprise (HA &amp; multi-site failover)</li>
+          <li>Jenkins, Jenkins Job DSL, Groovy, GitHub Actions</li>
+          <li>Open Policy Agent (OPA/Rego)</li>
           <li>Grafana Cloud, Prometheus, Dynatrace</li>
           <li>Kubernetes</li>
-          <li>Azure</li>
+          <li>Azure, Azure Key Vault, Ansible Vault</li>
           <li>Red Hat ecosystem (RHEL)</li>
         </ul>
 
